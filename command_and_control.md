@@ -48,6 +48,15 @@ Perform least-frequent analysis on both DNS and user agents.
 
  	3. Are there any abnormally long TXT records in either DNS requests or responses?
 
+ 	        <details>
+            <summary>Implementation</summary>
+
+            *   Collect user agents from HTTP requests from the proxy or NSM logs.
+            *	Sort from most common to least common.
+            *	Inspect the outliers (the least frequent).
+
+            </details>
+
 	4. Are there any abnormal user-agent strings in HTTP requests?
 
             <details>
