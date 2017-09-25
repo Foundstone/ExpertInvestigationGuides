@@ -38,14 +38,13 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
     1.  Does the endpoint contain evidence of suspicious outbound network connections?
 
         1. Are there any outbound DNS requests with a high degree of entropy?
+        	<details>
+        	<summary>Implementation</summary>
 
-        <details>
-        <summary>Implementation</summary>
+	    		*   Collect dns requests from DNS server or NSM logs.
+				*   Run them against "freq.py" to determine degree of entropy.
 
-	    	*   Collect dns requests from DNS server or NSM logs.
-			*   Run them against "freq.py" to determine degree of entropy.
-
-        </details>
+        	</details>
         
         2. Is there a large volume of incoming NX (nonexistent) domain responses coming back into the network?
 
