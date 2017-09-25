@@ -54,9 +54,9 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
         	<details>
         	<summary>Implementation</summary>
 
-            	*   Collect user agents from HTTP requests from the proxy or NSM logs.
-            	*	Sort from most common to least common.
-            	*	Inspect the outliers (the least frequent).
+				*	Collect user agents from HTTP requests from the proxy or NSM logs.
+				*	Sort from most common to least common.
+				*	Inspect the outliers (the least frequent).
 
             </details>
 
