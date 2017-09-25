@@ -12,4 +12,7 @@ On this repository you will also find a few examples of investigation guides tha
 
 ## References
 
- *   [The Need for Investigation Playbooks at the SOC by Matias Cuenca-Acuna and Ismael Valenzuela, SANS SOC Summit 2017](https://www.sans.org/summit-archives/file/summit-archive-1496695240.pdf) 
+ *	["The Need for Investigation Playbooks at the SOC" by Matias Cuenca-Acuna & Ismael Valenzuela, SANS SOC Summit 2017](https://www.sans.org/summit-archives/file/summit-archive-1496695240.pdf) 
+ *	["Threat Hunting like a PRO" by Ismael Valenzuela & Douglas Frosst, McAfee Labs Quarterly Threat Report, September 2017](TBD) 
+*	[MITRE ATT&CK Tactics](https://attack.mitre.org/wiki/) 
+*	[Threat Hunting Project](https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts) 
