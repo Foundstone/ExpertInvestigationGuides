@@ -22,8 +22,6 @@ Perform least-frequent analysis on both DNS and user agentes
 
 ## Additional References
 
-*	[MITRE ATT&CK Tactics: Command and Control](https://attack.mitre.org/wiki/Command_and_Control) 
-*	[Threat Hunting Project](https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts) 
 *	[Identifying Malware Traffic with Bro](http://blog.opensecurityresearch.com/2014/03/identifying-malware-traffic-with-bro.html)
 *	[Detecting Random - Finding Algorithmically chosen DNS names (DGA)](https://isc.sans.edu/forums/diary/Detecting+Random+Finding+Algorithmically+chosen+DNS+names+DGA/19893/)
 *	[Network Forensics with Windows DNS Analytical Logging](https://blogs.technet.microsoft.com/teamdhcp/2015/11/23/network-forensics-with-windows-dns-analytical-logging/)
