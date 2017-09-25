@@ -1,19 +1,18 @@
+---
+author: Ismael Valenzuela
+version: 1.0.0
+tags: Threat Hunting
+---
+
 # Expert Investigation Guides
  
 ## Threat Hunting Guides
 
-These investigation guides are based on the article: 
-
- *  ["Threat Hunting like a PRO" by Ismael Valenzuela & Douglas Frosst, McAfee Labs Quarterly Threat Report, September 2017](TBD)
-
+These investigation guides are based on the article *["Threat Hunting like a PRO" by Ismael Valenzuela & Douglas Frosst, McAfee Labs Quarterly Threat Report, September 2017](TBD)*
 
 This hunting guides describes some of the most effective hunts you can employ based on some logs commonly found in an average organization. None of these should be considered in isolation, but rather as part of a process that incorporates the key elements the article cited before includes. Please refer to the published article for additional context.
 
-Each hunting example describes a hypothesis, the questions that hunters need to ask to prove or disprove the hypothesis, the data or specific artifacts used to answer those questions, the source of that data, and the hunting technique or analytic suggested to implement it. This format follows the taxonomy and guidelines shared in:
-
-*  ["The Need for Investigation Playbooks at the SOC" by Francisco Matias Cuenca-Acuna & Ismael Valenzuela, SANS SOC Summit 2017](https://www.sans.org/summit-archives/file/summit-archive-1496695240.pdf) 
-
-*   [“Generating Hypotheses for Successful Threat Hunting", from David Bianco and Robert M. Lee](https://www.sans.org/reading-room/whitepapers/threats/generating-hypotheses-successful-threat-hunting-37172)
+Each hunting example describes a hypothesis, the questions that hunters need to ask to prove or disprove the hypothesis, the data or specific artifacts used to answer those questions, the source of that data, and the hunting technique or analytic suggested to implement it. This format follows the taxonomy and guidelines shared in *["The Need for Investigation Playbooks at the SOC" by Francisco Matias Cuenca-Acuna & Ismael Valenzuela, SANS SOC Summit 2017](https://www.sans.org/summit-archives/file/summit-archive-1496695240.pdf)* and *[“Generating Hypotheses for Successful Threat Hunting", from David Bianco and Robert M. Lee](https://www.sans.org/reading-room/whitepapers/threats/generating-hypotheses-successful-threat-hunting-37172)*
 
 
 ## Additional References
@@ -27,7 +26,6 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
 *   [Long Tail Analysis of Windows Event Logs by Eric Conrad](http://www.ericconrad.com/2015/01/long-tail-analysis-with-eric-conrad.html)
 *   ["Targeted Ransomware No Longer a Future Threat", by Christiaan Beek and Andrew Furtak](https://www.mcafee.com/us/resources/reports/rp-targeted-ransomware.pdf)
 *   [Lateral movement indicators in Petya attack, by McAfee](https://kc.mcafee.com/corporate/index?page=content&id=KB89540)
-
 *   [Research Report Released: Detecting Lateral Movement through Tracking Event Logs, by JPCERT/CC](http://blog.jpcert.or.jp/2017/06/1-ae0d.html)
 
 
@@ -35,13 +33,14 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
 
 1.  *An infected system on the network is generating outbound command and control traffic that has not yet been detected.* 
 
-    1.  Does the endpoint contain evidence of suspicious outbound network connections?
+	1.  Does the endpoint contain evidence of suspicious outbound network connections?
 
-        1. Are there any outbound DNS requests with a high degree of entropy?
+		1. Are there any outbound DNS requests with a high degree of entropy?
+        	
         	<details>
         	<summary>Implementation</summary>
 
-	    		*   Collect dns requests from DNS server or NSM logs.
+        		*   Collect dns requests from DNS server or NSM logs.
 				*   Run them against "freq.py" to determine degree of entropy.
 
         	</details>
@@ -52,14 +51,14 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
 
         4. Are there any abnormal user-agent strings in HTTP requests?
 
-        <details>
-        <summary>Implementation</summary>
+        	<details>
+        	<summary>Implementation</summary>
 
-            *   Collect user agents from HTTP requests from the proxy or NSM logs.
-            *	Sort from most common to least common.
-            *	Inspect the outliers (the least frequent).
+            	*   Collect user agents from HTTP requests from the proxy or NSM logs.
+            	*	Sort from most common to least common.
+            	*	Inspect the outliers (the least frequent).
 
-        </details>
+            </details>
 
         5. Are there any outbound connections generated at regular intervals?
 
@@ -67,8 +66,8 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
 
     1.  Are there any new items set to autostart in the investigated system, across this subnet, or in critical servers?
 
-    <details>
-    <summary>Implementation</summary>
+    	<details>
+    	<summary>Implementation</summary>
 
             *   Collect entries daily from a subset of systems.
             *   Employ least-frequent analysis to sort from most common to least common. 
@@ -79,7 +78,7 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
                 * Abnormally short or long filenames.
                 * Other rare executable filenames or directories. 
                 
-    </details>
+    	</details>
 
 3.  *An attacker already present on a compromised system is trying to elevate privileges by adding a user to a privileged group.*  
 
@@ -99,12 +98,12 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
 
 	2. Is there a new service on any critical servers? 
 
-    <details>
-    <summary>Implementation</summary>
+    	<details>
+    	<summary>Implementation</summary>
 
 			*	Get-WinEvent -FilterHashtable @{logname='system'; id=7045} 
 	
-	</details>
+		</details>
 
 	3. Are there any errors associated with the start of new services? 
 
