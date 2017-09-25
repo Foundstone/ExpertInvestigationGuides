@@ -42,11 +42,11 @@ Each hunting example describes a hypothesis, the questions that hunters need to 
         <details>
         <summary>Implementation</summary>
 
-	       	*   Collect dns requests from DNS server or NSM logs.
+	    	*   Collect dns requests from DNS server or NSM logs.
 			*   Run them against "freq.py" to determine degree of entropy.
 
         </details>
-
+        
         2. Is there a large volume of incoming NX (nonexistent) domain responses coming back into the network?
 
         3. Are there any abnormally long TXT records in either DNS requests or responses?
