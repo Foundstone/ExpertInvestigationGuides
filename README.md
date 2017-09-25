@@ -18,4 +18,4 @@ On this repository you will also find a few examples of investigation guides tha
 
 ## Published Investigation Guides
 
- *	[Threat Hunting](../ThreatHunting/README.md)
+ *	[Threat Hunting](https://github.com/Foundstone/ExpertInvestigationGuides/tree/master/ThreatHunting)
