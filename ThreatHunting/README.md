@@ -8,7 +8,7 @@ tags: Threat Hunting
 
 ## Threat Hunting Guides
 
-These investigation guides are based on the article *["Threat Hunting like a PRO" by Ismael Valenzuela & Douglas Frosst, McAfee Labs Quarterly Threat Report, September 2017](# "TBD")*
+These investigation guides are based on the article *["Threat Hunting like a PRO" by Ismael Valenzuela & Douglas Frosst, McAfee Labs Quarterly Threat Report, September 2017](https://www.mcafee.com/us/resources/reports/rp-quarterly-threats-sept-2017.pdf)*
 
 This hunting guides describes some of the most effective hunts you can employ based on some logs commonly found in an average organization. None of these should be considered in isolation, but rather as part of a process that incorporates the key elements the article cited before includes. Please refer to the published article for additional context.
 
